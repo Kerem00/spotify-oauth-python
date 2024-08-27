@@ -60,7 +60,6 @@ def token_refresh(token):
 
     token["access_token"] = r["access_token"]
 
-
 @app.route("/")
 def index():
     if request.cookies.get("access_token") is not None and request.cookies.get("refresh_token") is not None:
